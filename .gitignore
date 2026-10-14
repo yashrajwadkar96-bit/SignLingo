@@ -1,0 +1,56 @@
+# ═══════════════════════════════════════════════════════════════════════
+# SignLingo — .gitignore
+# ═══════════════════════════════════════════════════════════════════════
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ─────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Data & models (too large for git) ────────────────────────────────
+data/organized/
+data/isl_organized/
+data/landmarks/
+data/my_signs/
+wlasl-processed/
+wlasl-processed.zip
+*.zip
+
+# Trained model weights (large binary files)
+models/*.h5
+models/*.keras
+models/*.pkl
+models/*.json
+
+# ── Logs ──────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── IDE & OS ──────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Screenshots from demo ────────────────────────────────────────────
+screenshot_*.png
